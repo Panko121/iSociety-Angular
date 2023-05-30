@@ -1,0 +1,3 @@
+<div class="posts-board" *ngFor="let post of combinedPosts$ |async">
+  <app-single-post [singlePost]="post" ></app-single-post>
+</div>

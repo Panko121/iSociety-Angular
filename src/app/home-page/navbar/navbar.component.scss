@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 5.6rem;
+  background-color: #3e4042;
+  border-bottom: solid 2px #565758;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5.4rem;
+  padding-left: 2rem;
+
+  .logo-and-search {
+    display: flex;
+    gap: 4rem;
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 500;
+      padding-top: 0.4rem;
+      color: rgb(238, 103, 92);
+      padding: 0 1rem;
+      border-radius: 2rem;
+      border: solid 0.4rem rgb(238, 103, 92);
+    }
+  }
+
+  .home-and-groups {
+    display: flex;
+    gap: 4rem;
+    margin-right: 6rem;
+
+    .home {
+      cursor: pointer;
+    }
+  }
+
+  .messages-and-notifications {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .avatar {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 0.6rem;
+    border-radius: 1rem;
+    background-color: rgba(28, 43, 51, 0.1);
+    border: solid 1px rgb(224, 224, 224);
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    height: 4rem;
+    border-radius: 1rem;
+    padding-top: 0.6rem;
+  }
+
+  .icon:hover {
+    background-color: rgb(238, 103, 92);
+  }
+
+  .under {
+    padding-top: 1rem;
+  }
+}

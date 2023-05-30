@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="header">Connections</div>
+  <div class="contacts" *ngFor="let user of users$ | async">
+    <div class="user" (click)="checkProfile(user.id)">
+      <img class="avatar" src={{user.image}}>
+      <div class="name">
+        {{user.firstName}} {{user.lastName}}
+      </div>
+    </div>
+  </div>
+</div>

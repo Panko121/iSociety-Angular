@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="user-profile-container" *ngIf="userProfile$ | async as user">
+    <div class="image-and-name">
+      <img class="image" src={{user.image}}>
+    </div>
+    <div class="user-data">
+      <div class="nickname">Nick: {{user.username}}</div>
+      <div class="name">Full Name: {{user.firstName}} {{user.lastName}}</div>
+      <div class="gender">Gender: {{user.gender}}</div>
+      <div class="age">Age: {{user.age}}</div>
+      <div class="email">E-mail: {{user.email}}</div>
+      <div class="address">
+        <div class="street">Street: {{user.address.address}}</div>
+        <div class="city">City: {{user.address.city}}</div>
+        <div class="postal-code">Postal Code: {{user.address.postalCode}}</div>
+        <div class="state">State: {{user.address.state}}</div>
+      </div>
+    </div>
+    <div class="user-company" *ngIf="user.company as company">
+      <div class="header">Company's info</div>
+      <div class="company-name">Company Name: {{company.name}}</div>
+      <div class="company-department">Department: {{company.department}}</div>
+      <div class="company-name">Occupation: {{company.title}}</div>
+    </div>
+  </div>
+</div>

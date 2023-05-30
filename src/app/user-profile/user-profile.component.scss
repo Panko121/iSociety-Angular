@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  background-color: #3e4042;
+  font-size: 1.6rem;
+
+  .user-profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 2rem;
+
+    .image-and-name {
+      border: 0.2rem solid black;
+      border-radius: 2rem;
+      .image {
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+
+    .user-company {
+      .header {
+        font-size: 2rem;
+        margin-bottom: 1rem;;
+      }
+    }
+  }
+}
